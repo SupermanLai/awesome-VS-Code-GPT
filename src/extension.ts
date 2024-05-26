@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand('chatgpt-vscode.start', async () => {
-    const apiKey = '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';  // 请替换为你的 OpenAI API 密钥
+    const apiKey = 'sk-api key';  // 请替换为你的 OpenAI API 密钥
     const prompt = await vscode.window.showInputBox({
       prompt: 'Enter your prompt for ChatGPT',
       placeHolder: 'Type a question or command...'
